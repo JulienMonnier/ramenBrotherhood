@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	div.container
+		div.jumbotron(style="background-color: #FFD700")
+			h1= title
+			p Bienvenue !	
+		div.container
+			div.row-bottom-padded-sm
+				h3(align="center") Les réunions s'éternisent ? Tout les restos sont fermés ? La fonsdale tape à la porte ?
+				h3(align="center") Plus le choix, vous devrez acheter pour manger rapidos !
+				h3(align="center") Alors informez vous et vos collègues de la bouffe pour moins de 4€ !
+			div.row-bottom-padded-sm
+				h3(align="center") 3 critères de selection !
+			div.row-bottom-padded-sm
+				div.col-sm-4
+					img(src='images/bol.png', height="200", width="220", class="img-responsive center-block")
+					h4(align="center") Qualité
+				div.col-sm-4
+					img(src='images/fat.png', height="200", width="170", class="img-responsive center-block")
+					h4(align="center") Pétage de bide
+				div.col-sm-4
+					img(src='images/euro.png', height="200", width="200", class="img-responsive center-block")
+					h4(align="center") Moins de 4€

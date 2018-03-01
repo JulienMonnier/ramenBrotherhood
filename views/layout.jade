@@ -1,0 +1,25 @@
+doctype html
+html
+
+  include inc/header
+
+  head
+    
+  body
+  .nav
+      .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/',style="color: #FFD700") Ramen Brotherhood
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav        
+              li
+                a(href='/products') Produits
+              li
+                a(href='/space') Espace
+    block content
+
+    include inc/footer

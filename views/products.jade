@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    div.container
+        div.jumbotron(style="background-color: #FFD700")
+            h1 Produits
+            p Vous pouvez ajoutez des produits depuis la section Espace !
+        div.jumbotron(style="background-color: #DAA520")   
+            div.container
+                div.row-bottom-padded-sm
+                    div.col-md-3
+                        h3 Titre
+                    div.col-md-3
+                        h3 Qualité (/5)
+                    div.col-md-3
+                        h3 Pétage de bide (/5)
+                    div.col-md-3
+                        h3(align="center") Aperçu
+            div.container            
+                each product, i in products
+                    div.row-bottom-padded-sm
+                        div.col-md-3
+                            h4= product.title
+                        div.col-md-3
+                            h4= product.quality
+                        div.col-md-3
+                            h4= product.quantity
+                        div.col-md-3
+                            img(src='#{product.image}', height="100", width="100", class="img-responsive center-block")
